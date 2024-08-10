@@ -12,7 +12,7 @@ from langchain.chains import LLMChain
 
 # Bringing in the API Key
 import os
-os.environ['OPENAI_API_KEY'] = 'your-api-key-here'
+# Set your OpenAI API key as an environment variable before running the app using os.environ to set your key.
 
 # Build up a chain
 llm = OpenAI(temperature=0)

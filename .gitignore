@@ -1,10 +1,2 @@
-# Ignore sensitive files
-.env
-
-# Ignore Python bytecode and cache
-*.pyc
-__pycache__/
-
-# Ignore other unnecessary files or directories
-.DS_Store
-*.log
+# Ignore Streamlit secrets
+.streamlit/secrets.toml

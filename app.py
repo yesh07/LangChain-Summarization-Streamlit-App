@@ -10,14 +10,13 @@ from langchain.prompts import PromptTemplate
 # LLM Chain
 from langchain.chains import LLMChain
 
-# Bringing in the API Key
-import os
-# Set your OpenAI API key as an environment variable before running the app using os.environ to set your key.
+# Access the OpenAI API key from Streamlit secrets
+openai_api_key = st.secrets["openai_api_key"]
 
 # Build up a chain
-llm = OpenAI(temperature=0)
+llm = OpenAI(temperature=0, openai_api_key=openai_api_key)  # Pass the API key here
 
-template = PromptTemplate(input_variables=['summary_block'], template= '''Summarise the following block of text:{summary_block}''')
+template = PromptTemplate(input_variables=['summary_block'], template='''Summarize the following block of text:{summary_block}''')
 
 chain = LLMChain(llm=llm, prompt=template)
 
@@ -29,7 +28,7 @@ prompt = st.chat_input('Pass through a summarization prompt here')
 
 # Trigger if user hits enter
 if prompt:
-    # Rendering the user outputto the screen
+    # Rendering the user output to the screen
     st.chat_message('human', avatar='👨‍💻').markdown(prompt)
 
     # Get the response from the LLM

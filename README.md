@@ -17,14 +17,15 @@ The **LangChain Summarization Streamlit App** is a user-friendly web application
 - **OpenAI API**: Provides the underlying NLP capabilities for text summarization.
 
 ### How It Works
-1. **Input**: Users enter a block of text into the input field provided by the Streamlit app.
-2. **Processing**: The app sends the input text to the LangChain model, which is powered by OpenAI's API, to generate a summary.
-3. **Output**: The generated summary is displayed in the app's interface.
-
-### Getting Started
+- **Input**: Users enter a block of text into the input field provided by the Streamlit app.
+- **Processing**: The app sends the input text to the LangChain model, which is powered by OpenAI's API, to generate a summary.
+- **Output**: The generated summary is displayed in the app's interface.
 
 #### Prerequisites
 - Python 3.8+
 - Streamlit
 - OpenAI API Key
 
+<img width="1440" alt="Screenshot 2024-08-07 at 4 34 29 PM" src="https://github.com/user-attachments/assets/39dc46d1-699a-466a-8c93-e1d009166924">
+
+<img width="1438" alt="Screenshot 2024-08-07 at 4 35 28 PM" src="https://github.com/user-attachments/assets/0d413d06-c660-48de-a6f3-7579bbde8a33">
